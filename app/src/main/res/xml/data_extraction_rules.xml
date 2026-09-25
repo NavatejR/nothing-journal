@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Local journal data stays on the device: exclude the database and
+         preferences from cloud backup to keep entries private. -->
+    <exclude domain="database" path="journal.db" />
+    <exclude domain="sharedpref" path="." />
+</full-backup-content>

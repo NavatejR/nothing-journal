@@ -1,0 +1,37 @@
+# Gradle
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+*.keystore
+
+# Kotlin
+.kotlin/
+
+# Android
+local.properties
+keystore.properties
+.idea/
+*.iml
+.cxx/
+captures/
+
+# Tooling
+.freebuff/
+
+# Bundled AI models — fetched via scripts/fetch-models.sh or the release
+# assets; too large for git hosting (GitHub caps files at 100 MB).
+app/src/main/assets/ai/*.task
+app/src/main/assets/ai/*.bin
+
+# macOS
+.DS_Store
+*~
+
+# Local-only gallery builders
+screenshots/v2-gallery.html
+screenshots/v2-preview.html
+
+# Logs
+*.log

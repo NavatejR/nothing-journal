@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Dot-matrix "J" glyph on pure black, drawn in Nothing Red — the NothingOS
+     launcher signature with a journal-entry dot punched into the stem. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- The J stem: a column of square dot-matrix cells. -->
+    <path
+        android:fillColor="#FF0044"
+        android:pathData="M52,26h5v5h-5z M52,33h5v5h-5z M52,40h5v5h-5z M52,47h5v5h-5z M52,54h5v5h-5z M52,61h5v5h-5z M52,68h5v5h-5z" />
+    <!-- The J hook: stepped cells sweeping left along the bottom. -->
+    <path
+        android:fillColor="#FF0044"
+        android:pathData="M45,68h5v5h-5z M38,61h5v5h-5z M38,54h5v5h-5z" />
+    <!-- The entry dot: a red full stop to the stem's white top cell. -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M52,19h5v5h-5z" />
+</vector>
