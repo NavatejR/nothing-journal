@@ -94,6 +94,26 @@ cd nothing-journal
 > Prefer not to build? Grab the prebuilt APK (models bundled) from
 > [Releases](../../releases).
 
+### Release signing (maintainers)
+
+Release builds are signed via a gitignored `keystore.properties` at the repo
+root:
+
+```properties
+storeFile=nothingjournal-release.keystore
+storePassword=…
+keyAlias=nothingjournal
+keyPassword=…
+```
+
+Generate a keystore with `keytool -genkeypair -v -keystore
+nothingjournal-release.keystore -alias nothingjournal -keyalg RSA -keysize
+4096 -validity 10950`, fill in the properties file, then `./gradlew
+assembleRelease`. Both the keystore and the properties file are ignored by
+git — keep the keystore safe: losing it means the release key can never be
+reused. Without the properties file, release builds fall back to the debug
+key so CI and fresh clones still produce installable APKs.
+
 ### Model files
 
 | Job | Model | Size |
